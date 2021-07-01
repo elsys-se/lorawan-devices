@@ -208,9 +208,12 @@ vendors:
     name: Eddy Solutions
     vendorID: 128
 
-  - id: elektroniksystem
-    name: ElektronikSystem i Ume
+  - id: elsys
+    name: ElektronikSystem i Umeå AB
+    website: https://www.elsys.se/en/
     vendorID: 132
+    ouis:
+      - A81758
 
   - id: eleven-x
     name: Eleven-x
@@ -1681,7 +1684,3 @@ vendors:
   - id: innotas
     name: Innotas Elektronik
     website: https://www.innotas-elektronik.de/en-gb
-
-  - id: elsys
-    name: ElektronikSystem i Ume
-    website: https://www.elsys.se/en/
