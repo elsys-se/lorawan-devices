@@ -1,5 +1,5 @@
-name: ERS VOC indoor air quality
-description: ERS VOC is a smart and professional LoRaWAN® sensor for indoor air quality applications.
+name: ERS Desk for desk occupancy monitoring
+description: This is an indoor LoRaWAN® desk sensor for measuring indoor environment and occupancy.
 
 # Hardware versions (optional, use when you have revisions)
 hardwareVersions:
@@ -31,29 +31,29 @@ firmwareVersions:
         # the vendorID's folder. This allows you to reuse profiles from module or LoRaWAN end device stack vendors.
         # If vendorID is empty, the current vendor ID is used. In this example, the vendorID is the current vendor ID,
         # which is verbose.
-        # vendorID: 132
+        vendorID: example
         # Identifier of the profile (lowercase, alphanumeric with dashes, max 36 characters)
         id: elsys-eu868-profile
         lorawanCertified: true
-        codec: ers-voc-codec
+        codec: ers-desk-codec
       US902-928:
         id: elsys-us902-profile
         lorawanCertified: true
-        codec: ers-voc-codec
+        codec: ers-desk-codec
       AS923:
         id: elsys-as923-profile
         lorawanCertified: true
-        codec: ers-voc-codec
+        codec: ers-desk-codec
       AU915-928:
         id: elsys-au915-profile
         lorawanCertified: true
-        codec: ers-voc-codec
+        codec: ers-desk-codec
       IN865-867:
         id: elsys-in865-profile
-        codec: ers-voc-codec
+        codec: ers-desk-codec
       RU864-870:
         id: elsys-ru864-profile
-        codec: ers-voc-codec
+        codec: ers-desk-codec
 
 # Sensors that this device features (optional)
 # Valid values are:
@@ -68,10 +68,11 @@ sensors:
   - humidity
   - light
   - pir
-  - tvoc
+  - proximity
   - battery
   - rssi
   - snr
+  #- occupancy
 
 # Additional radios that this device has (optional)
 # Valid values are: ble, nfc, wifi, cellular.
@@ -105,12 +106,12 @@ operatingConditions:
     max: 0.85
 
 # Product and data sheet URLs (optional)
-productURL: https://www.elsys.se/en/ers-voc/
-dataSheetURL: https://elsys.se/public/datasheets/ERS_VOC_datasheet.pdf
+productURL: https://www.elsys.se/en/ers-desk/
+dataSheetURL: https://elsys.se/public/datasheets/ERS_desk_datasheet.pdf
 
 # Photos
 photos:
-  main: ersvoc.png
+  main: ersdesk.jpg
 
 # Youtube or Vimeo Video (optional)
 videos:

@@ -48,6 +48,12 @@ firmwareVersions:
         id: elsys-au915-profile
         lorawanCertified: true
         codec: ems-codec
+      IN865-867:
+        id: elsys-in865-profile
+        codec: ems-codec
+      RU864-870:
+        id: elsys-ru864-profile
+        codec: ems-codec
 
 # Sensors that this device features (optional)
 # Valid values are:
@@ -60,6 +66,9 @@ firmwareVersions:
 sensors:
   - temperature
   - humidity
+  - battery
+  - rssi
+  - snr
   #- leak detection
 
 # Additional radios that this device has (optional)
@@ -80,7 +89,7 @@ weight: 30
 # Battery information (optional)
 battery:
   replaceable: true
-  type: AA
+  type: AA (3.6V Li-SOCl2)
 
 # Operating conditions (optional)
 operatingConditions:

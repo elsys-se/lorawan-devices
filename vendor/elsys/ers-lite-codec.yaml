@@ -6,7 +6,7 @@ uplinkDecoder:
   examples:
     - description: ERS Lite temperature and humidity
       input:
-        fPort: 1
+        fPort: 5 # configurable in app
         bytes: [0x01, 0x00, 0xE2, 0x02, 0x29]
       output:
         data:

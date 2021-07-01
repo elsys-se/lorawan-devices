@@ -48,11 +48,33 @@ firmwareVersions:
         id: elsys-au915-profile
         lorawanCertified: true
         codec: elt-2-codec
+      IN865-867:
+        id: elsys-in865-profile
+        codec: elt-2-codec
+      RU864-870:
+        id: elsys-ru864-profile
+        codec: elt-2-codec
 
 # Additional radios that this device has (optional)
 # Valid values are: ble, nfc, wifi, cellular.
 additionalRadios:
   - nfc
+
+# Sensors that this device features (optional)
+# Valid values are:
+# 4-20 ma, accelerometer, altitude, analog input, auxiliary, barometer, battery, button, bvoc, co, co2, conductivity,
+# current, digital input, dissolved oxygen, distance, dust, energy, gps, gyroscope, h2s, humidity, iaq, level, light,
+# lightning, link, magnetometer, moisture, motion, no, no2, o3, particulate matter, ph, pir, pm2.5, pm10, potentiometer,
+# power, precipitation, pressure, proximity, pulse count, pulse frequency, radar, rainfall, rssi, smart valve, snr, so2,
+# solar radiation, sound, strain, surface temperature, temperature, tilt, time, tvoc, uv, vapor pressure, velocity,
+# vibration, voltage, water potential, water, weight, wifi ssid, wind direction, wind speed.
+features:
+  - analog input
+  - digital input
+  - pulse count
+  - battery
+  - rssi
+  - snr
 
 # Dimensions in mm (optional)
 # Use width, height, length and/or diameter
@@ -67,7 +89,7 @@ weight: 100
 # Battery information (optional)
 battery:
   replaceable: true
-  type: AA
+  type: AA (3.6V Li-SOCl2)
 
 # Operating conditions (optional)
 operatingConditions:

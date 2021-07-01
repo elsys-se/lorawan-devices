@@ -6,7 +6,7 @@ uplinkDecoder:
   examples:
     - description: EMS Door accelerometer and door switch
       input:
-        fPort: 1
+        fPort: 5 # configurable in app
         bytes: [0x03, 0x01, 0x27, 0x05, 0x0A, 0x11, 0x01, 0x0B, 0x00, 0x0A, 0x00, 0x11]
       output:
         data:

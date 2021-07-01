@@ -6,7 +6,7 @@ uplinkDecoder:
   examples:
     - description: ERS VOC temperature, humidity, light and motion
       input:
-        fPort: 1
+        fPort: 5 # configurable in app
         bytes: [0x01, 0x00, 0xE2, 0x02, 0x29, 0x04, 0x00, 0x27, 0x05, 0x06]
       output:
         data:

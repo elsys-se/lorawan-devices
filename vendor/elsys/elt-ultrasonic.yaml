@@ -48,6 +48,12 @@ firmwareVersions:
         id: elsys-au915-profile
         lorawanCertified: true
         codec: elt-ultrasonic-codec
+      IN865-867:
+        id: elsys-in865-profile
+        codec: elt-ultrasonic-codec
+      RU864-870:
+        id: elsys-ru864-profile
+        codec: elt-ultrasonic-codec
 
 # Sensors that this device features (optional)
 # Valid values are:
@@ -62,7 +68,10 @@ sensors:
   - humidity
   - accelerometer
   - pressure
-  # - ultrasonic
+  - distance
+  - battery
+  - rssi
+  - snr
 
 # Dimensions in mm (optional)
 # Use width, height, length and/or diameter
@@ -77,7 +86,7 @@ weight: 215
 # Battery information (optional)
 battery:
   replaceable: true
-  type: AA
+  type: AA (3.6V Li-SOCl2)
 
 # Operating conditions (optional)
 operatingConditions:
